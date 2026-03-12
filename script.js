@@ -134,7 +134,7 @@ if(email === "admin@barbearia.com" && senha === "1234"){
 
 alert("Login realizado");
 
-window.location.href = "pages/dashboard.html";
+window.location.href = "dashboard.html";
 
 }else{
 
@@ -382,4 +382,5 @@ document.getElementById("aguardandoHoje").textContent = aguardando;
 if(document.getElementById("totalHoje")){
 atualizarEstatisticas();
 }
+
 
