@@ -152,6 +152,10 @@ if(tabela){
 
 const agendamentos = JSON.parse(localStorage.getItem("agendamentos")) || [];
 
+agendamentos.sort(function(a, b){
+return a.horario.localeCompare(b.horario);
+});
+
 agendamentos.forEach(function(item){
 
 const linha = document.createElement("tr");
@@ -382,5 +386,7 @@ document.getElementById("aguardandoHoje").textContent = aguardando;
 if(document.getElementById("totalHoje")){
 atualizarEstatisticas();
 }
+
+
 
 
