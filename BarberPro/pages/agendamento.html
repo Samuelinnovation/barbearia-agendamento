@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento - BarberPro</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<h1 class="titulo-agendamento">Agendar Horário</h1>
+
+<form class="form-agendamento" id="formAgendamento">
+
+<div class="campo">
+<label>Nome</label>
+<input type="text" id="nome" required>
+</div>
+
+<div class="campo">
+<label>Foto de referência do corte (opcional)</label>
+<input type="file" id="fotoCorte" accept="image/*">
+</div>
+
+<div class="campo">
+<label>Telefone</label>
+<input type="text" id="telefone" required>
+</div>
+
+<div class="campo">
+<label>Barbeiro</label>
+<select id="barbeiro" required>
+<option value="">Selecione</option>
+<option>Deyvid</option>
+<option>Joaldey</option>
+<option>Jonatas</option>
+</select>
+</div>
+
+<div class="campo">
+<label>Data</label>
+<input type="date" id="data">
+</div>
+
+<div class="campo">
+<label>Horário</label>
+<select id="horario">
+<option value="">Selecione o horário</option>
+</select>
+</div>
+
+<button type="submit">Agendar</button>
+
+</form>
+
+</form>
+
+<script src="../script.js"></script>
+</body>
+
+</html>
