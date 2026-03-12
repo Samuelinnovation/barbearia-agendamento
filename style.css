@@ -1,0 +1,278 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte e fundo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* NAVBAR */
+header {
+    background-color: #111;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #d4af37;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* HERO */
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #111;
+}
+
+#hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #d4af37;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* SEÇÕES */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* CORTES */
+#cortes {
+    background-color: #111;
+}
+
+.corte {
+    border: 1px solid #d4af37;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+/* VANTAGENS */
+#vantagens p {
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.container-cortes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card-corte{
+    background-color: #111;
+    border: 1px solid #d4af37;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-corte img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card-corte{
+    transition: 0.3s;
+}
+
+.card-corte:hover{
+    transform: scale(1.05);
+    border-color: #ffd700;
+}
+
+#hero{
+    height: 90vh;
+    background-image: url("images/barbearia.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* camada escura por cima da imagem */
+#hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+/* conteúdo acima da camada escura */
+.hero-content{
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.form-agendamento{
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label{
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo select{
+    padding: 10px;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+    background-color: #111;
+    color: white;
+}
+
+.form-agendamento button{
+    grid-column: span 2;
+    padding: 15px;
+    background-color: #d4af37;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.titulo-agendamento{
+    text-align: center;
+    padding: 8px;
+   
+}
+
+.login{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.login form{
+    width:300px;
+}
+
+table{
+width:80%;
+margin:auto;
+border-collapse:collapse;
+color:white;
+}
+
+th, td{
+border:1px solid #d4af37;
+padding:10px;
+text-align:center;
+}
+
+th{
+background:#111;
+}
+
+#agenda{
+width:80%;
+margin:auto;
+}
+
+#agenda h2{
+margin-top:30px;
+color:#d4af37;
+}
+
+.agendamento-card{
+background:#111;
+border:1px solid #d4af37;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+}
+
+.estatisticas{
+display: flex;
+gap: 20px;
+margin: 30px 0;
+}
+
+.card-estat{
+background: #111;
+color: white;
+padding: 20px;
+border-radius: 10px;
+width: 180px;
+text-align: center;
+}
+
+.card-estat h3{
+font-size: 32px;
+margin-bottom: 5px;
+}
